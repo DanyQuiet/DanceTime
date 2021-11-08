@@ -1,0 +1,119 @@
+
+
+.intro {
+	background-image: linear-gradient(45deg, #0f3f9a00, #83133a);
+ 	animation: bubble 6s infinite alternate ease-in-out;
+
+ 	 @keyframes bubble {
+ 		from {
+ 			border-radius: 12% 7% 10% 10% / 10% 10% 10% 10%;
+ 		}
+
+ 		to {
+ 			border-radius: 15% 31% 10% 51% / 10% 17% 60% 49%;
+ 		}
+ 	}
+
+
+	@media (max-width: #{$mobile}) {
+		margin-top: 100px;
+	}
+}
+ 
+.intro__inner {
+	display: flex;
+	padding-top: 6.6rem;
+	padding-bottom: 8rem;	
+	border-bottom:  1px solid rgba($grey, .3);
+
+
+	background: url("../images/symbols.png") right bottom no-repeat;
+	position: relative;
+
+	@media (max-width: #{$tablet}) {
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+		background-size:  370px auto;
+	}
+
+	@media (max-width: #{$mobile}) {
+		background-size:  300px auto;
+	}
+
+	 
+}
+
+.intro__content {
+	width: 50%;
+
+	@media (max-width: #{$mobile})  {
+		width: 60%;
+	}
+
+	@media (max-width: #{$mobile-sm}) {
+ 		width: 100%;
+	}
+}
+
+.intro__subtitle {
+	font-size: 2.13rem;
+	color: $black;
+	font-weight: 200;
+
+	@media (max-width: #{$tablet}) {
+ 		font-size: 1.5em;
+	}
+}
+
+.intro__title {
+	font-size: 3rem;
+	color: $black;
+	font-weight: 700;
+
+	@media (max-width: #{$tablet}) {
+ 		font-size: 2em;
+	}
+}
+
+.intro__text {
+	margin-bottom: 25px;
+	font-size: 1.2rem;
+	color: rgba($black, .7);
+}
+
+ 
+.social__link-inst {
+	background: url("../images/Intro/bg.jpg");
+	background-size: contain;
+}
+
+.intro__photo {
+	position: absolute;
+	bottom: -1px;
+	right: 72px;
+	z-index: 1;
+	animation: translateY 1s;
+
+	@keyframes translateY {
+		from {
+			transform: translateY(-500px) rotate(180deg);
+		}
+
+		to {
+			transform: translateY(-1px) rotate(0deg);
+		}
+	}
+
+	@media (max-width: #{$tablet}) {
+		width: 250px;
+	}
+
+	@media (max-width: #{$mobile}) {
+		width: 200px;
+	}
+
+	@media (max-width: #{$mobile-sm}) {
+ 		display: none;
+	}
+}
+

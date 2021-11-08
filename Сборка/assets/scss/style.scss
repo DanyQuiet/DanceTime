@@ -1,0 +1,67 @@
+
+
+// vendor - библиотека Slick
+@import "vendor/slick";
+
+// Block
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,700;1,300&display=swap');
+@import "variable";
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/user";
+@import "blocks/nav";
+@import "blocks/intro";
+@import "blocks/social";
+@import "blocks/btn";
+@import "blocks/works";
+@import "blocks/work";
+@import "blocks/portfolio";
+@import "blocks/about";
+@import "blocks/reviews";
+@import "blocks/news";
+@import "blocks/articles";
+@import "blocks/footer";
+@import "blocks/modal";
+@import "blocks/modal-work";
+@import "blocks/timeline";
+@import "blocks/progress-bar";
+@import "blocks/contact";
+@import "blocks/burger";
+
+
+// helpers
+@import "blocks/helpers";
+
+html {
+	font-size: 15px;
+}
+
+body {
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1rem;
+	color: $black;
+	background: radial-gradient(circle, rgba(163,0,173,1) 0%, rgba(131,19,231,1) 100%);
+
+	&.no-scroll {
+		overflow: hidden;
+	}
+ }
+
+ 
+ *,
+ *:before,
+ *:after {
+ 	box-sizing: border-box;
+ }
+
+ h1, h2, h3, h4, h5, h6 {
+ 	margin: 0;
+ }
+
+ p {
+ 	margin: 0 0 1rem;
+ }
+
+
+
